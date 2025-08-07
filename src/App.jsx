@@ -1,5 +1,7 @@
+import Navbar from "./Components/Navbar";
+
 function App() {
-  return <p className="bg-red-200">THis is a portfolio</p>;
+  return <Navbar />;
 }
 
 export default App;
