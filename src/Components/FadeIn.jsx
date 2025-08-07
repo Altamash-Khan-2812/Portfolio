@@ -1,16 +1,21 @@
-import { motion } from "framer-motion";
+const fadeIn = (direction = "up", delay = 0) => {
+  return {
+    hidden: {
+      opacity: 0,
+      y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
+      x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: {
+        duration: 2,
+        delay,
+        ease: "easeOut",
+      },
+    },
+  };
+};
 
-function FadeInWrapper({ children, delay = 0 }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay }}
-      viewport={{ once: false, amount: 0.2 }}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-export default FadeInWrapper;
+export default fadeIn;

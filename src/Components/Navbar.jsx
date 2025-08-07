@@ -4,11 +4,11 @@ import moon_logo from "../images/moon_icon.webp";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center px-[6%] py-5">
+    <nav className="flex justify-between items-center px-[6%] py-5 sticky">
       <img src={home_logo} className="h-8 w-8" />
 
     <div className="absolute -top-[10px] left-[30%]  bg-gradient-to-r from-blue-100 to-purple-100 h-[15%] w-[60%] blur-[60px] opacity-80 -z-10 "></div>
-      <ul className="flex items-center gap-8 font-serif shadow py-6 px-20 rounded-full bg-white">
+      <ul className="flex items-center gap-8 font-serif shadow py-5 px-20 rounded-full bg-white">
         <li className="text-gray-700"><a href="#">About</a></li>
         <li className="text-gray-700"><a href="#">Skills</a></li>
         <li className="text-gray-700"><a href="#">Projects</a></li>
