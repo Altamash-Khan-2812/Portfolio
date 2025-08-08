@@ -31,3 +31,38 @@ export const skills = [
   { name: "CSS", src: "/skills/css.svg" },
   { name: "GIT", src: "/skills/git.svg" },
 ];
+
+export const projects = [
+  {
+    company: "Gray Matrix Solutions",
+    role: "Frontend Engineer",
+    projectName: "Talkk.ai ( Conversational AI Webapp )",
+    projectSummary:
+      "A Conversational AI web application that enhances user interaction through natural language processing.",
+    techStack: "React, Redux, JavaScript, Sass, Bootstrap, Talkk CMS.",
+  },
+  {
+    company: "Gray Matrix Solutions",
+    role: "Frontend Engineer",
+    projectName: "RMA QMS ( Mortgage Webapp )",
+    projectSummary:
+      "A mortgage web application designed to streamline the quality management system for the mortgage industry.",
+    techStack: " React, Context API, JavaScript, Sass, Bootstrap, HTML.",
+  },
+  {
+    company: "Gray Matrix Solutions",
+    role: "Frontend Engineer",
+    projectName: "Insyghts ( Human Resource System Webapp )",
+    projectSummary:
+      "A human resource system web application that simplifies employee management, recruitment, and analytics.",
+    techStack: "React, JavaScript, CSS, Context API.",
+  },
+  {
+    company: "MAK { Byte } | Frontend Engineer",
+    role: "Frontend Engineer",
+    projectName: "School Management System",
+    projectSummary:
+      "A web application built to manage school operations, including student records, grades, and schedules.",
+    techStack: "React, JavaScript, Sass, Bootstrap, HTML.",
+  },
+];

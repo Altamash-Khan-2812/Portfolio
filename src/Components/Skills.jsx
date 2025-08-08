@@ -4,9 +4,23 @@ import fadeIn from "./FadeIn";
 
 const Skills = () => {
   return (
-    <section className="flex flex-col items-center mb-20">
-      <p className="font-serif text-[18px] text-gray-800 mb-5">What I offer</p>
-      <h2 className="font-serif text-5xl text-gray-950 mb-15">My Skills</h2>
+    <section className="flex flex-col items-center mb-24">
+      <motion.p
+        variants={fadeIn("down", 0)}
+        initial="hidden"
+        whileInView="show"
+        className="font-serif text-gray-900 text-[18px] mb-4"
+      >
+        What I offer
+      </motion.p>
+      <motion.h2
+        className="text-5xl font-serif text-gray-950 mb-12"
+        variants={fadeIn("down", 0)}
+        initial="hidden"
+        whileInView="show"
+      >
+        My Skills
+      </motion.h2>
 
       <div className="grid grid-cols-4 gap-x-[12vw] gap-y-18">
         {skills.map((skill, i) => {
