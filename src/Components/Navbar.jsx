@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center px-[6%] py-5 sticky">
       <img src={home_logo} className="h-8 w-8" />
 
-    <div className="absolute -top-[10px] left-[30%]  bg-gradient-to-r from-blue-100 to-purple-100 h-[15%] w-[60%] blur-[60px] opacity-80 -z-10 "></div>
+    <div className="absolute left-[30%]  bg-gradient-to-r from-blue-100 to-purple-100 h-[100px] w-[60%] blur-[40px] opacity-80 -z-10 "></div>
       <ul className="flex items-center gap-8 font-serif shadow py-5 px-20 rounded-full bg-white">
         <li className="text-gray-700"><a href="#">About</a></li>
         <li className="text-gray-700"><a href="#">Skills</a></li>
@@ -21,8 +21,9 @@ const Navbar = () => {
         </button>
         <a
           href="#"
+          download
           aria-label="Download resume"
-          className="flex items-center gap-3 border-1 border-gray-800 rounded-full px-10 py-3 bg-white "
+          className="flex items-center gap-3 border-1 border-gray-800 rounded-full px-10 py-4 bg-white "
         >
           Resume <img src={download_logo} className="h-5 w-5" />
         </a>
