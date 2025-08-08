@@ -25,7 +25,7 @@ export const fadeWithNoSize = (delay = 0) => {
     show: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 1, delay, ease: "easeOut" },
+      transition: { duration: 2, delay, ease: "easeOut" },
     },
   };
 };

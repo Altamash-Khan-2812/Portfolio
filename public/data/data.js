@@ -18,3 +18,16 @@ export const experienceData = [
       "Actively contributed to open-source projects, enhancing community-driven tools and gaining global exposure.",
   },
 ];
+
+export const skills = [
+  { name: "React", src: "/skills/react.svg" },
+  { name: "Redux", src: "/skills/redux.svg" },
+  { name: "Js", src: "/skills/Js.svg" },
+  { name: "TypeScript", src: "/skills/typescript.svg" },
+  { name: "Tailwind", src: "/skills/tailwind.svg" },
+  { name: "Bootstrap", src: "/skills/bootstrap.svg" },
+  { name: "Accessibility", src: "/skills/accessibility.svg" },
+  { name: "HTML", src: "/skills/html.svg" },
+  { name: "CSS", src: "/skills/css.svg" },
+  { name: "GIT", src: "/skills/git.svg" },
+];

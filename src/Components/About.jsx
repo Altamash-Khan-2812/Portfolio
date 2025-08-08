@@ -1,11 +1,11 @@
-import { experienceData } from "../../public/data";
+import { experienceData } from "../../public/data/data";
 import { motion } from "framer-motion";
 import fadeIn, { fadeWithNoSize } from "./FadeIn";
 
 const About = () => {
   return (
     <>
-      <section className="flex flex-col items-center mb-20">
+      <section className="flex flex-col items-center mb-24">
         <motion.p
           variants={fadeIn("down", 0)}
           initial="hidden"
@@ -82,7 +82,12 @@ const About = () => {
 
 const ExperienceCard = ({ company, description, color }) => {
   return (
-    <motion.div variants={fadeIn('right', 0, 60)} initial="hidden" whileInView="show" className="flex flex-col gap-2">
+    <motion.div
+      variants={fadeIn("right", 0, 60)}
+      initial="hidden"
+      whileInView="show"
+      className="flex flex-col gap-2"
+    >
       <div className="flex items-center gap-4">
         <div className={`w-4 h-4 ${color} rounded-full`}></div>{" "}
         <p className="text-[24px] font-semibold">{company}</p>
