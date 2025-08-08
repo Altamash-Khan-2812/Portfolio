@@ -32,11 +32,8 @@ const Projects = () => {
 };
 
 const ProjectCard = (props) => {
-  console.log("props", props);
   const { company, role, projectName, projectSummary, techStack } =
     props.project;
-  console.log("company", company);
-  console.log("role", role);
 
   return (
     <div className="border-1 border-gray-400 rounded-md px-8 py-6 hover:cursor-pointer hover:bg-[#fffbf5] hover:shadow-lg hover:scale-[1.0001] transition-all duration-200">
