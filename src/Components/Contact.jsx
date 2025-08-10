@@ -6,7 +6,7 @@ import mail_icon from "../images/mail_icon.webp";
 
 const Contact = () => {
   return (
-    <section className="flex flex-col items-center mb-8 border-b border-gray-300 mx-30 pb-15">
+    <section className="flex flex-col items-center mb-8 border-b border-gray-300 mx-30 pb-15 scroll-mt-[140px]" id="contacts">
       <motion.p
         variants={fadeIn("down", 0)}
         initial="hidden"

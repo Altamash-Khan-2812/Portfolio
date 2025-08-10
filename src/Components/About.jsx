@@ -5,7 +5,7 @@ import fadeIn, { fadeWithNoSize } from "./FadeIn";
 const About = () => {
   return (
     <>
-      <section className="flex flex-col items-center mb-24">
+      <section className="flex flex-col items-center mb-24 scroll-mt-[140px]" id="about">
         <motion.p
           variants={fadeIn("down", 0)}
           initial="hidden"

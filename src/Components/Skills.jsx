@@ -4,7 +4,7 @@ import fadeIn from "./FadeIn";
 
 const Skills = () => {
   return (
-    <section className="flex flex-col items-center mb-24">
+    <section className="flex flex-col items-center mb-24 scroll-mt-[140px]" id="skills">
       <motion.p
         variants={fadeIn("down", 0)}
         initial="hidden"

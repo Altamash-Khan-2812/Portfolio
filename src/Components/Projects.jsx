@@ -4,7 +4,7 @@ import { projects } from "../../public/data/data";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center mb-28 font-[inter]">
+    <section className="flex flex-col items-center mb-28 font-[inter] scroll-mt-[140px]" id="projects">
       <motion.p
         variants={fadeIn("down", 0)}
         initial="hidden"
