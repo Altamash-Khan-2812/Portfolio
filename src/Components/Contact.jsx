@@ -11,12 +11,12 @@ const Contact = () => {
         variants={fadeIn("down", 0)}
         initial="hidden"
         whileInView="show"
-        className="font-serif text-gray-900 text-[18px] mb-4"
+        className="font-serif text-gray-900 text-[18px] mb-4 dark:text-white"
       >
         Connect with me
       </motion.p>
       <motion.h2
-        className="text-5xl font-serif text-gray-950 mb-12"
+        className="text-5xl font-serif text-gray-950 mb-12 dark:text-white"
         variants={fadeIn("down", 0)}
         initial="hidden"
         whileInView="show"
@@ -28,7 +28,7 @@ const Contact = () => {
         variants={fadeWithNoSize()}
         initial="hidden"
         whileInView="show"
-        className=" text-center leading-[30px] mb-10"
+        className=" text-center leading-[30px] mb-10 dark:text-white"
       >
         I'd love to hear from you! If you have any questions, comments, or
         feedback, please use the form below.
@@ -39,7 +39,7 @@ const Contact = () => {
           <motion.input
             type="text"
             placeholder="Enter your name"
-            className="flex-1 border outline-none p-3 font-semibold  border-gray-400 rounded-md placeholder:font-semibold"
+            className="flex-1 border outline-none p-3 font-semibold  border-gray-400 rounded-md placeholder:font-semibold dark:text-white dark:placeholder:text-[#bbb]"
             variants={fadeIn("right", 0, 80)}
             initial="hidden"
             whileInView="show"

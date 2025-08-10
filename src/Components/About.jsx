@@ -5,17 +5,17 @@ import fadeIn, { fadeWithNoSize } from "./FadeIn";
 const About = () => {
   return (
     <>
-      <section className="flex flex-col items-center mb-24 scroll-mt-[140px]" id="about">
+      <section className="flex flex-col items-center mb-24 scroll-mt-[140px] dark:text-white" id="about">
         <motion.p
           variants={fadeIn("down", 0)}
           initial="hidden"
           whileInView="show"
-          className="font-serif text-gray-900 text-[18px] mb-4"
+          className="font-serif text-gray-900 text-[18px] mb-4 dark:text-white"
         >
           Introduction
         </motion.p>
         <motion.h2
-          className="text-5xl font-serif text-gray-950 mb-12"
+          className="text-5xl font-serif text-gray-950 mb-12 dark:text-white"
           variants={fadeIn("down", 0)}
           initial="hidden"
           whileInView="show"
@@ -50,7 +50,7 @@ const About = () => {
             <p className="text-[18px]">Skills Mastered</p>
           </motion.div>
         </div>
-        <p className="text-3xl font-serif text-gray-800 mb-8">
+        <p className="text-3xl font-serif text-gray-800 mb-8 dark:text-white">
           Career Highlights
         </p>
         <div className="w-6xl">
@@ -66,11 +66,11 @@ const About = () => {
               );
             })}
           </div>
-          <div className="bg-gray-200 py-8 rounded-2xl">
+          <div className="bg-gray-200 py-8 rounded-2xl dark:bg-gray-800">
             <p className="text-center mb-3 text-[18px]">
               "Code is like humor. When you have to explain it, it's bad."
             </p>
-            <p className="text-center text-gray-800">
+            <p className="text-[15px] text-center text-gray-800 dark:text-[#bbb]">
               — My Approach to Development
             </p>
           </div>

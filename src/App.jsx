@@ -7,9 +7,10 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 
 function App() {
+
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <Hero />
       <About />
       <Skills />
