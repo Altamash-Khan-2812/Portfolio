@@ -88,7 +88,7 @@ const Navbar = () => {
         </ul>
 
         <div className="flex gap-10 ">
-          <button aria-label="Toggle dark mode" onClick={handleDarkModeToggle}>
+          <button aria-label="Toggle dark mode" onClick={handleDarkModeToggle} className="hover:cursor-pointer">
             {darkMode ? (
               <img src={sun_logo} className="w-6" />
             ) : (

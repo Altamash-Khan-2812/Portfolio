@@ -3,10 +3,14 @@ import fadeIn from "./FadeIn";
 import { fadeWithNoSize } from "./FadeIn";
 import right_arrow from "../images/right_arrow_white.webp";
 import mail_icon from "../images/mail_icon.webp";
+import mail_icon_dark from "../images/mail_icon_dark.webp";
 
 const Contact = () => {
   return (
-    <section className="flex flex-col items-center mb-8 border-b border-gray-300 mx-30 pb-15 scroll-mt-[140px]" id="contacts">
+    <section
+      className="flex flex-col items-center mb-8 border-b border-gray-300 mx-30 pb-15 scroll-mt-[140px]"
+      id="contacts"
+    >
       <motion.p
         variants={fadeIn("down", 0)}
         initial="hidden"
@@ -39,7 +43,7 @@ const Contact = () => {
           <motion.input
             type="text"
             placeholder="Enter your name"
-            className="flex-1 border outline-none p-3 font-semibold  border-gray-400 rounded-md placeholder:font-semibold dark:text-white dark:placeholder:text-[#bbb]"
+            className="flex-1 border outline-none p-3 font-semibold  border-gray-400 rounded-md placeholder:font-semibold dark:text-white dark:placeholder:text-[#bbb] dark:border-white dark:bg-[#2a004a4d]"
             variants={fadeIn("right", 0, 80)}
             initial="hidden"
             whileInView="show"
@@ -47,7 +51,7 @@ const Contact = () => {
           <motion.input
             type="text"
             placeholder="Enter your email"
-            className="flex-1 border outline-none font-semibold border-gray-400 p-3 rounded-md placeholder:font-semibold"
+            className="flex-1 border outline-none font-semibold border-gray-400 p-3 rounded-md placeholder:font-semibold  dark:text-white dark:placeholder:text-[#bbb] dark:border-white dark:bg-[#2a004a4d]"
             variants={fadeIn("left", 0, 80)}
             initial="hidden"
             whileInView="show"
@@ -55,21 +59,22 @@ const Contact = () => {
         </div>
 
         <motion.textarea
-          className="w-full h-60 border outline-none p-3 font-semibold border-gray-400 rounded-md placeholder:font-semibold mb-8"
+          className="w-full h-60 border outline-none p-3 font-semibold border-gray-400 rounded-md placeholder:font-semibold mb-8 dark:bg-[#2a004a4d] dark:text-white dark:placeholder:text-[#bbb] dark:border-white"
           placeholder="Enter your message"
           variants={fadeIn("up", 0, 60)}
           initial="hidden"
           whileInView="show"
         ></motion.textarea>
 
-        <button className="bg-black self-center text-white flex items-center gap-2 py-4 px-8 rounded-full">
+        <button className="hover:cursor-pointer bg-black self-center text-white flex items-center gap-2 py-4 px-8 rounded-full dark:bg-transparent dark:border">
           Submit <img src={right_arrow} className="w-4 h-3" />
         </button>
       </form>
 
       <div className="flex items-center gap-2">
-        <img src={mail_icon} className="w-6 h-5" />{" "}
-        <span className="text-gray-900 font-medium">
+        <img src={mail_icon} className="w-6 h-4 object-cover dark:hidden" />
+        <img src={mail_icon_dark} className="w-6 h-4 object-cover hidden dark:block" />
+        <span className="text-gray-900 font-medium dark:text-[#ccc]">
           altamashkhn281@gmail.com
         </span>
       </div>
