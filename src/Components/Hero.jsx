@@ -5,7 +5,7 @@ import right_arrow from "../images/right_arrow_white.webp";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center h-[100vh] px-2 mb-[100px] md:mb-0">
+    <section className="flex flex-col items-center justify-center h-[100vh] px-4 mb-[100px] md:mb-0">
       <motion.h1
         variants={fadeIn("down", 0)}
         initial="hidden"

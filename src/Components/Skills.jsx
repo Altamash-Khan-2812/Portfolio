@@ -4,7 +4,10 @@ import fadeIn from "./FadeIn";
 
 const Skills = () => {
   return (
-    <section className="flex flex-col items-center mb-24 scroll-mt-[140px]" id="skills">
+    <section
+      className="flex flex-col items-center mb-24 scroll-mt-[140px]"
+      id="skills"
+    >
       <motion.p
         variants={fadeIn("down", 0)}
         initial="hidden"
@@ -22,25 +25,23 @@ const Skills = () => {
         My Skills
       </motion.h2>
 
-      <div className="grid grid-cols-4 gap-x-[12vw] py-10 px-28 rounded-lg gap-y-18 dark:bg-[#2a004a]">
-        {skills.map((skill, i) => {
-          return (
-            <div className="flex flex-col items-center gap-2" key={i}>
-              <motion.img
-                src={skill.src}
-                alt={skill.name}
-                className="w-[100px] h-[100px]"
-                variants={fadeIn("down")}
-                initial="hidden"
-                whileInView="show"
-              ></motion.img>
-              {/* <img src={skill.src} alt={skill.name} className="w-[100px] h-[100px]" /> */}
-              <p className="font-semibold text-[20px] text-gray-950  dark:text-white">
-                {skill.name}
-              </p>
-            </div>
-          );
-        })}
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-16 sm:gap-x-20 md:gap-x-[12vw] py-6 sm:py-8 md:py-10 px-4 sm:px-10 md:px-28 rounded-lg gap-y-8 sm:gap-y-12 md:gap-y-18 dark:bg-[#2a004a]">
+        {skills.map((skill, i) => (
+          <div className="flex flex-col items-center gap-2" key={i}>
+            <motion.img
+              src={skill.src}
+              alt={skill.name}
+              className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px]"
+              variants={fadeIn("down")}
+              initial="hidden"
+              whileInView="show"
+            />
+            <p className="font-semibold text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] text-gray-950 dark:text-white">
+              {skill.name}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );

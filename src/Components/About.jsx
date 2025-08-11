@@ -72,7 +72,7 @@ const About = () => {
               "Readable code is reliable code."
             </p>
             <p className="text-sm md:text-lg text-center text-gray-800 dark:text-[#bbb]">
-              — My Approach to Development
+              How I Think About Code
             </p>
           </div>
         </div>

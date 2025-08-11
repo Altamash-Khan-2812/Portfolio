@@ -22,7 +22,7 @@ const Projects = () => {
         My Projects
       </motion.h2>
 
-      <div className="grid grid-cols-2 gap-x-10 gap-y-10 mx-[15vw]">
+      <div className="grid sm:grid-cols-2 gap-x-10 gap-y-10 mx-5 lg:mx-[15vw]">
         {projects.map((project, i) => {
           return <ProjectCard project={project} key={i} />;
         })}
@@ -36,7 +36,7 @@ const ProjectCard = (props) => {
     props.project;
 
   return (
-    <div className="border-1 border-gray-400 rounded-md px-8 py-6 hover:cursor-pointer hover:bg-[#fffbf5] hover:shadow-lg dark:hover:bg-[#2A004A] hover:scale-[1.0001] transition-all duration-200">
+    <div className="border-1 border-gray-400 rounded-md px-2 md:px-8 py-6 hover:cursor-pointer hover:bg-[#fffbf5] hover:shadow-lg dark:hover:bg-[#2A004A] hover:scale-[1.0001] transition-all duration-200">
       <p className="text-gray-600 text-[12px] mb-2 dark:text-[#FFFFFFCC]">
         {company} | {role}
       </p>
