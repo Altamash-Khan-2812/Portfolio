@@ -5,12 +5,13 @@ import right_arrow from "../images/right_arrow_white.webp";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center h-[100vh]">
+    <section className="flex flex-col items-center justify-center h-[100vh] px-2 mb-[100px] md:mb-0">
       <motion.h1
         variants={fadeIn("down", 0)}
         initial="hidden"
         whileInView="show"
-        className="text-5xl md:text-6xl font-bold mb-6 text-gray-950 dark:text-white"
+        className="text-3xl font-semibold sm:text-4xl md:text-5xl lg:text-6xl md:font-bold :
+        mb-3 md:mb-6 text-gray-950 dark:text-white"
       >
         Khan Altamash
       </motion.h1>
@@ -19,7 +20,7 @@ export default function Hero() {
         variants={fadeIn("down", 0.2)}
         initial="hidden"
         whileInView="show"
-        className="text-2xl mb-10 text-gray-900 dark:text-white"
+        className="text-lg sm:text-2xl mb-10 text-gray-900 dark:text-white"
       >
         Frontend Engineer
       </motion.h2>
@@ -34,7 +35,7 @@ export default function Hero() {
         specialising in React, Next.js, JavaScript and other Web technologies.
       </motion.p>
 
-      <div className="flex gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
         <motion.button
           variants={fadeIn("up", 0.2)}
           initial="hidden"

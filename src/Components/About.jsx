@@ -10,19 +10,19 @@ const About = () => {
           variants={fadeIn("down", 0)}
           initial="hidden"
           whileInView="show"
-          className="font-serif text-gray-900 text-[18px] mb-4 dark:text-white"
+          className="font-serif text-gray-900 text-[18px] mb-2 md:mb-5 dark:text-white"
         >
           Introduction
         </motion.p>
         <motion.h2
-          className="text-5xl font-serif text-gray-950 mb-12 dark:text-white"
+          className="text-4xl md:text-5xl font-serif text-gray-950 mb-15 dark:text-white"
           variants={fadeIn("down", 0)}
           initial="hidden"
           whileInView="show"
         >
           About Me
         </motion.h2>
-        <div className="flex justify-between gap-64 mb-18">
+        <div className="flex flex-col justify-between items-center md:flex-row gap-20 md:gap-64 mb-18">
           <motion.div
             variants={fadeWithNoSize()}
             initial="hidden"
@@ -53,7 +53,8 @@ const About = () => {
         <p className="text-3xl font-serif text-gray-800 mb-8 dark:text-white">
           Career Highlights
         </p>
-        <div className="w-6xl">
+
+        <div className="w-full max-w-6xl mx-auto px-5">
           <div className="border-l-3 border-gray-400 pl-10 flex flex-col gap-10 mb-14">
             {experienceData.map((exp, i) => {
               return (
@@ -67,10 +68,10 @@ const About = () => {
             })}
           </div>
           <div className="bg-gray-200 py-8 rounded-2xl dark:bg-gray-800">
-            <p className="text-center mb-3 text-[18px]">
-              "Code is like humor. When you have to explain it, it's bad."
+            <p className="text-center mb-3 text-md md:text-xl">
+              "Readable code is reliable code."
             </p>
-            <p className="text-[15px] text-center text-gray-800 dark:text-[#bbb]">
+            <p className="text-sm md:text-lg text-center text-gray-800 dark:text-[#bbb]">
               — My Approach to Development
             </p>
           </div>
@@ -90,9 +91,9 @@ const ExperienceCard = ({ company, description, color }) => {
     >
       <div className="flex items-center gap-4">
         <div className={`w-4 h-4 ${color} rounded-full`}></div>{" "}
-        <p className="text-[24px] font-semibold">{company}</p>
+        <p className="md:text-[24px] font-bold">{company}</p>
       </div>
-      <p className="ml-9 leading-[30px] text-[18px]">{description}</p>
+      <p className="text-[14px] md:ml-9 leading-[30px] md:text-[18px]">{description}</p>
     </motion.div>
   );
 };
