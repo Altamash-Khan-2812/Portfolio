@@ -45,6 +45,7 @@ const About = () => {
             variants={fadeWithNoSize()}
             initial="hidden"
             whileInView="show"
+            className="flex flex-col items-center"
           >
             <p className="text-5xl text-purple-600 font-bold">10+</p>
             <p className="text-[18px]">Skills Mastered</p>
