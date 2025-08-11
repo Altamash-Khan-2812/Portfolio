@@ -105,7 +105,7 @@ const Navbar = () => {
 const MobileMenu  = ({modalOpen, setModalOpen}) => {
   return (
   <div className={`bg-gray-100 dark:bg-[#130c27] w-[80vw] h-[100vh] z-80 right-0 fixed  transition-left duration-1000 ${modalOpen ? "translate-x-0" : "translate-x-full"}`}>
-      <X className="absolute right-0 mr-3 mt-5 w-8 h-8 dark:text-white" onClick={() => setModalOpen(!modalOpen)}/>
+      <X className="absolute right-0 mr-5 mt-5 w-8 h-8 dark:text-white" onClick={() => setModalOpen(!modalOpen)}/>
 
         <ul className="font-serif flex flex-col gap-5 ml-5 pt-20 text-gray-900 dark:text-white" onClick={(e) => e.target.textContent ? setModalOpen(false) : ""}>
           <li className=""><a href="#about">About</a></li>

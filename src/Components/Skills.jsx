@@ -5,7 +5,7 @@ import fadeIn from "./FadeIn";
 const Skills = () => {
   return (
     <section
-      className="flex flex-col items-center mb-24 scroll-mt-[140px]"
+      className="flex flex-col items-center mb-24 scroll-mt-[140px] px-10"
       id="skills"
     >
       <motion.p
@@ -26,13 +26,13 @@ const Skills = () => {
       </motion.h2>
 
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-16 sm:gap-x-20 md:gap-x-[12vw] py-6 sm:py-8 md:py-10 px-4 sm:px-10 md:px-28 rounded-lg gap-y-8 sm:gap-y-12 md:gap-y-18 dark:bg-[#2a004a]">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-16 sm:gap-x-20 md:gap-x-[12vw] py-6 sm:py-8 md:py-10 px-14 sm:px-10 md:px-28 rounded-lg gap-y-8 sm:gap-y-12 md:gap-y-18 dark:bg-[#2a004a]">
         {skills.map((skill, i) => (
           <div className="flex flex-col items-center gap-2" key={i}>
             <motion.img
               src={skill.src}
               alt={skill.name}
-              className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px]"
+              className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[90px] md:h-[90px] lg:w-[100px] lg:h-[100px]"
               variants={fadeIn("down")}
               initial="hidden"
               whileInView="show"

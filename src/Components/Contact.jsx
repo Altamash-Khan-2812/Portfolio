@@ -8,7 +8,7 @@ import mail_icon_dark from "../images/mail_icon_dark.webp";
 const Contact = () => {
   return (
     <section
-      className="flex flex-col items-center mb-8 border-b border-gray-300 mx-30 pb-15 scroll-mt-[140px]"
+      className="flex flex-col items-center mb-8 border-b border-gray-300 pb-15 scroll-mt-[140px]"
       id="contacts"
     >
       <motion.p
@@ -20,7 +20,7 @@ const Contact = () => {
         Connect with me
       </motion.p>
       <motion.h2
-        className="text-5xl font-serif text-gray-950 mb-12 dark:text-white"
+        className="text-4xl font-serif text-gray-950 mb-12 dark:text-white"
         variants={fadeIn("down", 0)}
         initial="hidden"
         whileInView="show"
@@ -32,19 +32,19 @@ const Contact = () => {
         variants={fadeWithNoSize()}
         initial="hidden"
         whileInView="show"
-        className=" text-center leading-[30px] mb-10 dark:text-white"
+        className=" text-center leading-[30px] mb-10 dark:text-white px-3"
       >
         I'd love to hear from you! If you have any questions, comments, or
         feedback, please use the form below.
       </motion.p>
 
-      <form className="flex flex-col justify-center mb-28 w-2xl">
-        <div className="flex gap-5 w-full mb-5">
+      <form className="flex flex-col justify-center mb-28 w-full px-12 md:w-2xl">
+        <div className="flex flex-col sm:flex-row gap-5 w-full mb-5">
           <motion.input
             type="text"
             placeholder="Enter your name"
             className="flex-1 border outline-none p-3 font-semibold  border-gray-400 rounded-md placeholder:font-semibold dark:text-white dark:placeholder:text-[#bbb] dark:border-white dark:bg-[#2a004a4d]"
-            variants={fadeIn("right", 0, 80)}
+            variants={fadeIn("right", 0, 70)}
             initial="hidden"
             whileInView="show"
           ></motion.input>
@@ -52,7 +52,7 @@ const Contact = () => {
             type="text"
             placeholder="Enter your email"
             className="flex-1 border outline-none font-semibold border-gray-400 p-3 rounded-md placeholder:font-semibold  dark:text-white dark:placeholder:text-[#bbb] dark:border-white dark:bg-[#2a004a4d]"
-            variants={fadeIn("left", 0, 80)}
+            variants={fadeIn("left", 0, 70)}
             initial="hidden"
             whileInView="show"
           ></motion.input>
@@ -70,10 +70,14 @@ const Contact = () => {
           Submit <img src={right_arrow} className="w-4 h-3" />
         </button>
       </form>
+   
 
       <div className="flex items-center gap-2">
         <img src={mail_icon} className="w-6 h-4 object-cover dark:hidden" />
-        <img src={mail_icon_dark} className="w-6 h-4 object-cover hidden dark:block" />
+        <img
+          src={mail_icon_dark}
+          className="w-6 h-4 object-cover hidden dark:block"
+        />
         <span className="text-gray-900 font-medium dark:text-[#ccc]">
           altamashkhn281@gmail.com
         </span>
