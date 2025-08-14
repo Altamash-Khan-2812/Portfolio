@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { skills } from "../../public/data/data";
 import fadeIn from "./FadeIn";
+import Heading from "./Heading";
 
 const Skills = () => {
   return (
@@ -8,7 +9,7 @@ const Skills = () => {
       className="flex flex-col items-center mb-24 scroll-mt-[140px] px-10"
       id="skills"
     >
-      <motion.p
+      {/* <motion.p
         variants={fadeIn("down", 0)}
         initial="hidden"
         whileInView="show"
@@ -23,7 +24,8 @@ const Skills = () => {
         whileInView="show"
       >
         My Skills
-      </motion.h2>
+      </motion.h2> */}
+      <Heading heading="My Skills" subheading=" What I offer"/>
 
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-16 sm:gap-x-20 md:gap-x-[12vw] py-6 sm:py-8 md:py-10 px-14 sm:px-10 md:px-28 rounded-lg gap-y-8 sm:gap-y-12 md:gap-y-18 dark:bg-[#2a004a]">

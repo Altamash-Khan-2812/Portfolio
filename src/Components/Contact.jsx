@@ -4,6 +4,7 @@ import { fadeWithNoSize } from "./FadeIn";
 import right_arrow from "../images/right_arrow_white.webp";
 import mail_icon from "../images/mail_icon.webp";
 import mail_icon_dark from "../images/mail_icon_dark.webp";
+import Heading from "./Heading";
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
       className="flex flex-col items-center mb-8 border-b border-gray-300 pb-15 scroll-mt-[140px]"
       id="contacts"
     >
-      <motion.p
+      {/* <motion.p
         variants={fadeIn("down", 0)}
         initial="hidden"
         whileInView="show"
@@ -26,7 +27,8 @@ const Contact = () => {
         whileInView="show"
       >
         Get in touch
-      </motion.h2>
+      </motion.h2> */}
+      <Heading heading="Get in touch" subheading="Connect with me"/>
 
       <motion.p
         variants={fadeWithNoSize()}

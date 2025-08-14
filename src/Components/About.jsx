@@ -1,12 +1,13 @@
 import { experienceData } from "../../public/data/data";
 import { motion } from "framer-motion";
 import fadeIn, { fadeWithNoSize } from "./FadeIn";
+import Heading from "./Heading";
 
 const About = () => {
   return (
     <>
       <section className="flex flex-col items-center mb-24 scroll-mt-[140px] dark:text-white" id="about">
-        <motion.p
+        {/* <motion.p
           variants={fadeIn("down", 0)}
           initial="hidden"
           whileInView="show"
@@ -21,7 +22,8 @@ const About = () => {
           whileInView="show"
         >
           About Me
-        </motion.h2>
+        </motion.h2> */}
+        <Heading heading="About Me" subheading="Introduction"/>
         <div className="flex flex-col justify-between items-center md:flex-row gap-20 md:gap-64 mb-18">
           <motion.div
             variants={fadeWithNoSize()}

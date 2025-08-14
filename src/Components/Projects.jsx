@@ -1,11 +1,15 @@
 import { motion } from "framer-motion";
 import fadeIn from "./FadeIn";
 import { projects } from "../../public/data/data";
+import Heading from "./Heading";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center mb-28 font-[inter] scroll-mt-[140px] dark:text-white" id="projects">
-      <motion.p
+    <section
+      className="flex flex-col items-center mb-28 font-[inter] scroll-mt-[140px] dark:text-white"
+      id="projects"
+    >
+      {/* <motion.p
         variants={fadeIn("down", 0)}
         initial="hidden"
         whileInView="show"
@@ -20,7 +24,8 @@ const Projects = () => {
         whileInView="show"
       >
         My Projects
-      </motion.h2>
+      </motion.h2> */}
+      <Heading heading="My Projects" subheading="What I Have Created" />
 
       <div className="grid sm:grid-cols-2 gap-x-10 gap-y-10 mx-5 lg:mx-[15vw]">
         {projects.map((project, i) => {
@@ -40,8 +45,12 @@ const ProjectCard = (props) => {
       <p className="text-gray-600 text-[12px] mb-2 dark:text-[#FFFFFFCC]">
         {company} | {role}
       </p>
-      <p className="text-xl text-gray-700 font-medium mb-3 dark:text-white">{projectName}</p>
-      <p className="text-sm text-gray-600 leading-5 mb-5 dark:text-[#FFFFFFCC]">{projectSummary}</p>
+      <p className="text-xl text-gray-700 font-medium mb-3 dark:text-white">
+        {projectName}
+      </p>
+      <p className="text-sm text-gray-600 leading-5 mb-5 dark:text-[#FFFFFFCC]">
+        {projectSummary}
+      </p>
       <p className="text-lg font-semibold">Techstack: {techStack}</p>
     </div>
   );

@@ -36,14 +36,15 @@ export default function Hero() {
       </motion.p>
 
       <div className="flex flex-col md:flex-row gap-4">
-        <motion.button
+        <motion.a
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView="show"
+          href="#contacts"
           className="px-8 py-3 bg-black text-white rounded-full flex items-center gap-3 dark:bg-transparent dark:border "
         >
           Contact me <img src={right_arrow} className="w-4 h-3" />
-        </motion.button>
+        </motion.a>
         <motion.button
           variants={fadeIn("up", 0.2)}
           initial="hidden"
